@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV | Fahad Shabbir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #1a2a3a;
+            --accent-blue: #2980b9;
+            --text-main: #2c3e50;
+            --text-light: #7f8c8d;
+            --white: #ffffff;
+            --bg-gray: #f8f9fa;
+            --sidebar-bg: #243447;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-gray);
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+            color: var(--text-main);
+        }
+
+        .cv-container {
+            width: 100%;
+            max-width: 1000px;
+            background: var(--white);
+            display: flex;
+            min-height: 1100px;
+            box-shadow: 0 20px-50px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 32%;
+            background-color: var(--sidebar-bg);
+            color: var(--white);
+            padding: 50px 30px;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            background: #4b5d67;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            border: 5px solid rgba(255,255,255,0.1);
+        }
+
+        .sidebar h1 {
+            font-size: 22px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar .subtitle {
+            text-align: center;
+            color: #a0aec0;
+            font-size: 13px;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            text-transform: uppercase;
+            margin: 35px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent-blue);
+            letter-spacing: 1px;
+        }
+
+        .contact-info p {
+            font-size: 13px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            color: #d1d8e0;
+        }
+
+        .contact-info i {
+            width: 25px;
+            color: var(--accent-blue);
+        }
+
+        .skills-list {
+            list-style: none;
+        }
+
+        .skills-list li {
+            font-size: 13px;
+            margin-bottom: 8px;
+            background: rgba(255,255,255,0.05);
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            width: 68%;
+            padding: 50px;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: var(--primary-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #eee;
+            margin-left: 15px;
+        }
+
+        .summary-text {
+            line-height: 1.7;
+            font-size: 14.5px;
+            color: var(--text-light);
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .role {
+            font-weight: 700;
+            color: var(--primary-dark);
+            font-size: 15px;
+        }
+
+        .date {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent-blue);
+        }
+
+        .company {
+            display: block;
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        .description {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .cv-container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile-img"></div>
+            <h1>Fahad Shabbir</h1>
+            <span class="subtitle">Full-Stack Developer</span>
+            
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> fahad.shabbir@email.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</p>
+                <p><i class="fab fa-linkedin"></i> linkedin.com/in/fahadshabbir</p>
+            </div>
+
+            <div class="skills-section">
+                <h3>Expertise</h3>
+                <ul class="skills-list">
+                    <li>React.js & Node.js</li>
+                    <li>.NET / Blazor</li>
+                    <li>Information Security</li>
+                    <li>Penetration Testing</li>
+                    <li>API Integration</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section>
+                <h2>Professional Summary</h2>
+                <p class="summary-text">
+                    Dedicated Full-Stack Developer and Information Security enthusiast completing an Associate Degree in Computer Science at Air University. Passionate about building secure, high-performance web applications and exploring the intersection of development and cybersecurity.
+                </p>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span class="role">Lead Developer - Tele-Health System</span>
+                        <span class="date">2025 - 2026</span>
+                    </div>
+                    <span class="company">Final Year Project | Air University</span>
+                    <p class="description">Architecting a full-stack consultation platform to bridge the gap between urban specialists and rural clinics using modern web technologies.</p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span class="role">Network Security Simulation</span>
+                        <span class="date">2025</span>
+                    </div>
+                    <span class="company">Academic Project</span>
+                    <p class="description">Implemented Attacker-Defender models using Kali Linux to simulate and mitigate network vulnerabilities.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span class="role">Associate Degree in Computer Science</span>
+                        <span class="date">2024 - 2026</span>
+                    </div>
+                    <span class="company">Air University, Islamabad</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Technical Projects</h2>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span class="role">EduTrack Portal</span>
+                        <span class="date">2025</span>
+                    </div>
+                    <p class="description">Developed a comprehensive student management system focusing on UX and data persistence.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span class="role">Ultrasonic Radar System</span>
+                        <span class="date">2024</span>
+                    </div>
+                    <p class="description">Integrated hardware and software using Arduino and Processing IDE for real-time spatial mapping.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
